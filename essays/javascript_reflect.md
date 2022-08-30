@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Reflection on Javascript"
+title: "Learning Javascript: Easy Language or Good Resources?"
 # All dates must be YYYY-MM-DD format!
 date: 2022-08-30
 published: true
@@ -11,7 +11,6 @@ labels:
 
 <img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
 
-*Difficulty: a thing that is hard to accomplish, deal with, or understand.*
 
 #Start of my journey
 
@@ -20,7 +19,11 @@ and was telling me how much better it is then C#, which was the only language I 
 and thought to myself how much easier it was. When I was first learning about javascript it seemed to be a great in between of both the languages. It kept the same feel 
 from C# but had so much quality of life improvements that python had.
 
-#Challenges and difficulties
+#Why is javascript so good?
 
-#Comparing Java Script
+Coding language is a preference, so why should I believe you?
+
+#Is practice everything?
+
+#Callback
 
