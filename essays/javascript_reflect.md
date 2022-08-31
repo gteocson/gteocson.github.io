@@ -23,7 +23,11 @@ from C# but had so much quality of life improvements that python had.
 
 Coding language is a preference, so why should I believe you?
 
+Now do not get me wrong, there are so many different programming languages that are used for different things. I am more so trying to give you my background and a real life review from an active yet relatively beginner coder. 
+
 #Is practice everything?
+
+Even though I have barely started ICS 314 I cannot deny that the way we practiced was one of the best. (FIX) Most of my courses either had few hands on examples with a a focus on lecturing or the coding problems tended to be a set piece of code and creating a function. If you are like me that may not be your most preferred method. 
 
 #Callback
 
