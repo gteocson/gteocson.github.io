@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/wordle/wordle_app.jpg
 title: "What Makes A Good Wordle Word"
-date: 2014
+date: 2021
 published: true
 labels:
   - Python
