@@ -8,7 +8,7 @@ published: true
 labels:
   - Python
   - Jupyter Notebook
-summary: "A small project for EE396 to find the best word and words to use"
+summary: "A small project for EE396 to find the best words to use in Wordle."
 ---
 <p align="center">
   <img width="500"
