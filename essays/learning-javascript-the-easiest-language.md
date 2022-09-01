@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Learning Javascript: Is It The Easiest Language I've Learned?"
+title: "Learning Javascript: The Easiest Language?"
 # All dates must be YYYY-MM-DD format!
 date: 2022-08-30
 published: true
@@ -13,8 +13,7 @@ labels:
 
 # The Easiest First Steps?
 
-Before this course the only prior experience I had with JavaScript was when I was doing some coding problems with my friend. He knew JavaScript from his internship 
-and was telling me how much better it is then C#, which was the only language I knew at the time. 
+Spoiler alert, I lied. It mostly comes from my background of different coding languages and experience. Before this course the only prior experience I had with JavaScript was when I was doing some coding problems with my friend. He knew JavaScript from his internship and was telling me how much better it is then C#, which was the only language I knew at the time. 
 
 However, before I even attempted to learn JavaScript, I had to learn about python for one of my capstone courses. It was great since I felt like I had more freedom in coding, no more brackets or semicolons and arrays were piece of cake. 
 
