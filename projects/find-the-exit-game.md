@@ -7,7 +7,7 @@ date: 2019
 published: true
 labels:
   - C#
-summary: "A game that was in EE160 about the player trying to traverse a minefield."
+summary: "A game that was made for EE160 about the player trying to traverse a minefield."
 ---
 
 Timmy Finds The Exit was a project which used a pre-existing interface given to use by our professor. The project was a cumulation of everything we learned in the course and was our task was to implement the game itself. The board itself resembles minefield where the depending on your position there is a number showing how much mines you are next to. The main goal of the game is to get through to the other side. A secondary optional goal is getting a high score by passing through spaces or planting flags on bombs.
