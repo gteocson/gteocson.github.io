@@ -9,7 +9,7 @@ labels:
   - Python
   - Machine Learning
   - Board Game
-summary: "For my x96 classes I have been working on testing and improving AI in a board game."
+summary: "For my x96 classes I have been working on testing."
 ---
 
 # How Does the Game Work?
