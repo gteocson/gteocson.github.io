@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: 
+image: img/wordle/wordle_app.jpg
 title: "What Makes A Good Wordle Word"
 date: 2014
 published: true
