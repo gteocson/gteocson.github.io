@@ -10,7 +10,8 @@ labels:
   - Javascript
   - Coding
 ---
-<div class="text-center p-4">
+
+<p alignt="center">
   <img width="150px" 
        src="../img/Csharp_Logo.png" 
        class="img-thumbnail" >
@@ -20,7 +21,8 @@ labels:
   <img width="150px" 
        src="../img/javascript_logo.png" 
        class="img-thumbnail" >
-</div>
+ </p>
+
      
 # The Easiest First Steps?
 
