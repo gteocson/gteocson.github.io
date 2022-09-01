@@ -10,10 +10,10 @@ labels:
   - Jupyter Notebook
 summary: "A small project for EE396 to find the best word and words to use"
 ---
-
-<img align="center"
-     width="600"
+<p align="center">
+  <img width="600"
      src="../img/wordle/wordle_header.png">
+</p>
 
 Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
 
