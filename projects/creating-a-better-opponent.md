@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/Huligutta/Huligutta-Start.jpg
+image: img/Huligutta/huligutta-header.jpg
 title: "Creating A Better Opponent"
 date: 2022
 published: true
