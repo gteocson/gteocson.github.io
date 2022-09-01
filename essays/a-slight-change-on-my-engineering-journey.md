@@ -9,6 +9,8 @@ labels:
   - Software Engineering
 ---
 
+<img align="left" src="../img/fork-in-road.jpg">
+
 # I Did Not Think It Was For Me
 
 Honestly going into college I believed that I would focus more on the hardware side of the computer. Slowly I became more interested in the software side of things. I learned to enjoy coding and dare I say became decent at it. While there still is this part of me that likes the small intricate machinery that makes a computer run, I feel more confident in being able to work with websites, applications, and more. Even though I still feel like there is a long path ahead of me I feel more focused about which coding langauges to practice, the type of programs to research, and the projects I want to do.
