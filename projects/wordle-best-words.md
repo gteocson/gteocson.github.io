@@ -2,16 +2,16 @@
 layout: project
 type: project
 image: 
-title: "Bowling Scoreboard"
+title: "What Makes A Good Wordle Word"
 date: 2014
 published: true
 labels:
-  - Lisp
-  - GitHub
-summary: "A scoreboard for bowling I made in EE160."
+  - Python
+  - Jupyter Notebook
+summary: "A small project for EE396 to find the best word and words to use"
 ---
 
-<img class="img-fluid" src="../img/cotton/cotton-header.png">
+<img class="img-fluid" src="../img/wordle/wordle-header/jpg">
 
 Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
 
