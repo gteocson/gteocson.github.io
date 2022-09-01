@@ -15,3 +15,5 @@ A secondary goal is getting a better score by traversing more spaces and flaggin
 
 <img class="img-fluid" src="../img/FindTheExit/FindExitStart.jpg">
 
+
+The project was an culmination of all we learned in EE160. I did have a large amount of difficulties during hte project
