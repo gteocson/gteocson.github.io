@@ -2,12 +2,11 @@
 layout: project
 type: project
 image: 
-title: "Find the exit"
-date: 2014
+title: "Timmy Finds The Exit"
+date: 2019
 published: true
 labels:
-  - Lisp
-  - GitHub
+  - C#
 summary: "A game I made in EE160."
 ---
 
