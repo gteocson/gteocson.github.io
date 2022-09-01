@@ -11,9 +11,13 @@ labels:
   - Coding
 ---
 
+<img width="200px" 
+     class="rounded float-start pe-4" 
+     src="../img/difficulty/degree_difficulty.jpg" >
+     
 # The Easiest First Steps?
 
-Spoiler alert, I lied. It mostly comes from my background of different coding languages and experience. Before this course the only prior experience I had with JavaScript was when I was doing some coding problems with my friend. He knew JavaScript from his internship and was telling me how much better it is then C#, which was the only language I knew at the time. 
+Spoiler alert, it isn't. It mostly comes from my background of different coding languages and experience. Before this course the only prior experience I had with JavaScript was when I was doing some coding problems with my friend. He knew JavaScript from his internship and was telling me how much better it is then C#, which was the only language I knew at the time. 
 
 However, before I even attempted to learn JavaScript, I had to learn about python for one of my capstone courses. It was great since I felt like I had more freedom in coding, no more brackets or semicolons and arrays were piece of cake. 
 
