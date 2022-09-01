@@ -12,7 +12,7 @@ labels:
 ---
 <div class="text-center p-4">
   <img width="200px" 
-       src="../img/c#_logo.png" 
+       src="../img/Csharp_Logo.png" 
        class="img-thumbnail" >
   <img width="200px" 
        src="../img/python_logo.jpg" 
