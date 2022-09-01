@@ -30,19 +30,16 @@ dictionary = {}
 for z in answers:
 
     dictionary.clear()
-    
+
     for x in answers:
     
         p = getPattern(z,x)
-    
+        
         if p in dictionary.keys():
-
             dictionary[p]+= 1
-        
         else:
-        
             dictionary[p] = 1
-    
+            
     print("\nThe word is",z,"\nNumber of different patterns",len(dictionary))
 `
 
