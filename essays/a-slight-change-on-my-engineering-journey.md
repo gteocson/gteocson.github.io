@@ -9,7 +9,7 @@ labels:
   - Software Engineering
 ---
 
-<img align="left" src="../img/fork-in-road.jpg">
+<img align="left" width=100px src="../img/fork-in-road.jpg">
 
 # I Did Not Think It Was For Me
 
