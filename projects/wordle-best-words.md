@@ -11,7 +11,7 @@ labels:
 summary: "A small project for EE396 to find the best word and words to use"
 ---
 <p align="center">
-  <img width="600"
+  <img width="500"
      src="../img/wordle/wordle_header.png">
 </p>
 
