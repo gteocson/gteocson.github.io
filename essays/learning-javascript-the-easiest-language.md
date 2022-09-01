@@ -11,7 +11,7 @@ labels:
   - Coding
 ---
 
-<p alignt="center">
+<p align="center">
   <img width="150px" 
        src="../img/Csharp_Logo.png" 
        class="img-thumbnail" >
