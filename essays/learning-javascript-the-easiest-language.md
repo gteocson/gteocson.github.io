@@ -10,13 +10,17 @@ labels:
   - Javascript
   - Coding
 ---
-<img width="200px" 
-     class="rounded float-start pe-4" 
-     src="../img/c#_logo.jpg" >
-     
-<img width="200px" 
-     class="rounded float-start pe-4" 
-     src="../img/javascript_logo.png" >
+<div class="text-center p-4">
+  <img width="200px" 
+       src="../img/c#_logo.png" 
+       class="img-thumbnail" >
+  <img width="200px" 
+       src="../img/python_logo.jpg" 
+       class="img-thumbnail" >
+  <img width="200px" 
+       src="../img/javascript_logo.png" 
+       class="img-thumbnail" >
+</div>
      
 # The Easiest First Steps?
 
