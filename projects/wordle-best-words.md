@@ -24,7 +24,7 @@ When you guess a word there may be a specific word that gives you the highest pr
 But how would you find that out? We explored the entropy of a word and the number of patterns associated with that word. To find the number of patterns with each word would use the function below. Note that our word bank isn't the same as wordles and I think they are still updating it as well.
 
 
-`
+```
 dictionary = {}
 
 for z in answers:
@@ -41,7 +41,7 @@ for z in answers:
             dictionary[p] = 1
             
     print("\nThe word is",z,"\nNumber of different patterns",len(dictionary))
-`
+```
 
 # A New Project?
 
