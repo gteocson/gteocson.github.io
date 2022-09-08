@@ -13,47 +13,40 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## You won't sound dumb (probably)
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
-
-## What’s a smart question?
-
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
-
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+Now I don't want to discourage anybody from asking questions. I believe asking questions are important and even if the answer may be obvious in hindsight at least the experience will help you. However, I do believe asking questions is a skill that needs to be learned and practiced. In the software engineering field there is so much room for diversity. There are many different coding languages, environments, there could be issues with the hardware or bugs from other programs. Being able to ask good questions will allow you to find good answers and learn more.
 
 ```
-Q: python date of the previous month
+Q: How can I pivot a dataframe?
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+The problem with existing questions and answers is that often the question is focused on a nuance that the OP has trouble generalizing in order to use a number of the existing good answers. However, none of the answers attempt to give a comprehensive explanation (because it's a daunting task)
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+Look a few examples from my Google Search
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
+How to pivot a dataframe in Pandas?
+Good question and answer. But the answer only answers the specific question with little explanation.
+pandas pivot table to data frame
+In this question, the OP is concerned with the output of the pivot. Namely how the columns look. OP wanted it to look like R. This isn't very helpful for pandas users.
+pandas pivoting a dataframe, duplicate rows
+Another decent question but the answer focuses on one method, namely pd.DataFrame.pivot
+So whenever someone searches for pivot they get sporadic results that are likely not going to answer their specific question.
 
-I have solved this trouble in bash with:
+Question(s)
+Why do I get ValueError: Index contains duplicate entries, cannot reshape
 
-echo $(date -d"3 month ago" "+%G%m%d")
+How do I pivot df such that the col values are columns, row values are the index, and mean of val0 are the values?
 
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
+ col   col0   col1   col2   col3  col4
+ row
+ row0  0.77  0.605    NaN  0.860  0.65
+ row2  0.13    NaN  0.395  0.500  0.25
+ row3   NaN  0.310    NaN  0.545   NaN
+ row4   NaN  0.100  0.395  0.760  0.24
 
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
 ```
 
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.
 
 ```
 A: datetime and the datetime.timedelta classes are your friend.
