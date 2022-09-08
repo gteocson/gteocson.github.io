@@ -15,7 +15,7 @@ labels:
 
 ## You won't sound dumb (probably)
 
-Now I don't want to discourage anybody from asking questions. I believe asking questions are important and even if the answer may be obvious in hindsight at least the experience will help you. However, I do believe asking questions is a skill that needs to be learned and practiced. In the software engineering field there is so much room for diversity. There are many different coding languages, environments, there could be issues with the hardware or bugs from other programs. Being able to ask good questions will allow you to find good answers and learn more.
+Now I don't want to discourage anybody from asking questions. I believe asking questions are important and even if the answer may be obvious in hindsight at least the experience will help you. However, I do believe asking questions is a skill that needs to be learned and practiced. In the software engineering field there is so much room for diversity. There are many different coding languages, environments, there could be issues with the hardware or bugs from other programs. Being able to ask good questions will allow you to find good answers and learn more. Let's take a look at stack overflow, a website used by programmers to help ask and answer questions relating to a multitude of coding related areas.
 
 ```
 Q: How can I pivot a dataframe?
@@ -86,21 +86,14 @@ Now in this particular answer they have recieved a direct
 
 ## The foolproof way to get ignored.
 
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
+```
+Q: Python Old object information being kept
+
+I'm making a class of rooted Trees using a class of Nodes that have a "word" of the form [1,1,2], where [1,1] is the parent of [1,1,2] and [1,1,1] is the preceding sibling of [1,1,2], a list of children, and a parent. For some reason, in the for loop section, the second time the line nextChild = Node(word) it is taking as input one child (which is the previous nextChild) even though I am not passing in anything as the child. I have no idea why this is happening. I'll post more code if requested.
 
 ```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+Note that this is the original question without the edit. The edit adds a section of code to look at, which you can also look at [here](https://stackoverflow.com/questions/24320779/python-old-object-information-being-kept). The asker didn't end up getting a proper answer only redirections to other forum posts due to no code present to test and debug. The fact that they had to incorporate the code afterwards meant it was too late and most likely was covered by other questions. 
 
 ## Conclusion
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+
