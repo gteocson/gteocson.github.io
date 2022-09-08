@@ -46,29 +46,43 @@ How do I pivot df such that the col values are columns, row values are the index
 
 ```
 
-The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.
+The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.
 
 ```
-A: datetime and the datetime.timedelta classes are your friend.
+A:
+Examples
+What I'm going to do for each subsequent answer and question is to answer it using pd.DataFrame.pivot_table. Then I'll provide alternatives to perform the same task.
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
+Question 3
+How do I pivot df such that the col values are columns, row values are the index, mean of val0 are the values, and missing values are 0?
 
-Like this:
+pd.DataFrame.pivot_table
 
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
+fill_value is not set by default. I tend to set it appropriately. In this case I set it to 0. Notice I skipped question 2 as it's the same as this answer without the fill_value
 
+aggfunc='mean' is the default and I didn't have to set it. I included it to be explicit.
+
+    df.pivot_table(
+        values='val0', index='row', columns='col',
+        fill_value=0, aggfunc='mean')
+
+    col   col0   col1   col2   col3  col4
+    row
+    row0  0.77  0.605  0.000  0.860  0.65
+    row2  0.13  0.000  0.395  0.500  0.25
+    row3  0.00  0.310  0.000  0.545  0.00
+    row4  0.00  0.100  0.395  0.760  0.24
+pd.DataFrame.groupby
+
+  df.groupby(['row', 'col'])['val0'].mean().unstack(fill_value=0)
+pd.crosstab
+
+  pd.crosstab(
+      index=df['row'], columns=df['col'],
+      values=df['val0'], aggfunc='mean').fillna(0)
 ```
  
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
+Now in this particular answer they have recieved a direct 
 
 ## The foolproof way to get ignored.
 
