@@ -10,7 +10,7 @@ labels:
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/question_img.jpg">
 
 ## You won't sound dumb (probably)
 
@@ -45,7 +45,7 @@ How do I pivot df such that the col values are columns, row values are the index
 
 ```
 
-The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.
+The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation. 
 
 ```
 A:
@@ -81,9 +81,11 @@ pd.crosstab
       values=df['val0'], aggfunc='mean').fillna(0)
 ```
  
-Now in this particular answer they have recieved a direct 
+The way they worded the question has allowed them to extract more information as we can see from the responses. In this particular answer they have recieved a direct answer along with alternative methods. This is because they provided people with adequate information to get the exact answer they are looking for. They can even test the code given to them as a bonus.
 
-## The foolproof way to get ignored.
+## What should you avoid?
+
+I suggest doing your own personal research first because you may find out another person has had the same problem as you. If you are resorting to posting on a forum try to gather all possible information needed before posting. A good bad example is like the question below.
 
 ```
 Q: Python Old object information being kept
@@ -93,6 +95,6 @@ I'm making a class of rooted Trees using a class of Nodes that have a "word" of 
 ```
 Note that this is the original question without the edit. The edit adds a section of code to look at, which you can also look at [here](https://stackoverflow.com/questions/24320779/python-old-object-information-being-kept). The asker didn't end up getting a proper answer only redirections to other forum posts due to no code present to test and debug. The fact that they had to incorporate the code afterwards meant it was too late and most likely was covered by other questions. 
 
-## Conclusion
+Again this doesn't mean to stop asking questions. You should just know how to ask them and improve on it. It is a powerful skill that everyone can use. I still have trouble asking questions but it takes time.
 
 
