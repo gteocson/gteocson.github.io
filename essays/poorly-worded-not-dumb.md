@@ -3,11 +3,10 @@ layout: essay
 type: essay
 title: "Poorly Worded Doesn't Mean Dumb"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2022-09-08
 published: true
 labels:
   - Questions
-  - Answers
   - StackOverflow
 ---
 
