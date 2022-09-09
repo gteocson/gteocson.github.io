@@ -81,7 +81,7 @@ pd.crosstab
       values=df['val0'], aggfunc='mean').fillna(0)
 ```
  
-The way they worded the question has allowed them to extract more information as we can see from the responses. In this particular answer they have recieved a direct answer along with alternative methods. This is because they provided people with adequate information to get the exact answer they are looking for. They can even test the code given to them as a bonus.
+The way they worded the question has allowed them to extract more information as we can see from the responses. In this particular answer they have received a direct answer along with alternative methods. This is because they provided people with adequate information to get the exact answer they are looking for. They can even test the code given to them as a bonus.
 
 ## What should you avoid?
 
