@@ -45,7 +45,7 @@ How do I pivot df such that the col values are columns, row values are the index
 
 ```
 
-The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other questions relating, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation. 
+The question actually has a lot more information then shown above and I highly encourage you to look at it [here](https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe). The creator of the question includes code that they are testing as well as other follow up questions relating to thee topic, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.
 
 ```
 A:
@@ -80,7 +80,7 @@ pd.crosstab
       index=df['row'], columns=df['col'],
       values=df['val0'], aggfunc='mean').fillna(0)
 ```
- 
+
 The way they worded the question has allowed them to extract more information as we can see from the responses. In this particular answer they have received a direct answer along with alternative methods. This is because they provided people with adequate information to get the exact answer they are looking for. They can even test the code given to them as a bonus.
 
 ## What should you avoid?
@@ -93,8 +93,7 @@ Q: Python Old object information being kept
 I'm making a class of rooted Trees using a class of Nodes that have a "word" of the form [1,1,2], where [1,1] is the parent of [1,1,2] and [1,1,1] is the preceding sibling of [1,1,2], a list of children, and a parent. For some reason, in the for loop section, the second time the line nextChild = Node(word) it is taking as input one child (which is the previous nextChild) even though I am not passing in anything as the child. I have no idea why this is happening. I'll post more code if requested.
 
 ```
-Note that this is the original question without the edit. The edit adds a section of code to look at, which you can also look at [here](https://stackoverflow.com/questions/24320779/python-old-object-information-being-kept). The asker didn't end up getting a proper answer only redirections to other forum posts due to no code present to test and debug. The fact that they had to incorporate the code afterwards meant it was too late and most likely was covered by other questions. 
+
+Note that this is the original question without the edit. The edit adds a section of code to look at, which you can also look at [here](https://stackoverflow.com/questions/24320779/python-old-object-information-being-kept). The asker didn't end up getting a proper answer only redirections to other forum posts due to no code present to test and debug. The fact that they had to incorporate the code afterwards meant it was too late and most likely was covered by other questions.
 
 Again this doesn't mean to stop asking questions. You should just know how to ask them and improve on it. It is a powerful skill that everyone can use. I still have trouble asking questions but it takes time.
-
-
