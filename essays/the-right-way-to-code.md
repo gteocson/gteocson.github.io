@@ -3,19 +3,18 @@ layout: essay
 type: essay
 title: "The Right Way to Code?"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2022-09-21
 published: false
 labels:
-- Questions
-- Answers
-- StackOverflow
+- IntelliJ
+- Coding Standards
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## I haven't followed coding standards
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+During my entire time in school none of my classes had me follow any coding standards. The premise was if the code worked then it was good enough. While it was nice to not follow any strict guidelines I realized a few bad habits. While I was working with code I ended up being messy, having multiple empty spaces, random variables, etc. The code was a nightmare to look back at. 
 
 ## What’s a smart question?
 
