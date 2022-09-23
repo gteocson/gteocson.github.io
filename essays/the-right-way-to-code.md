@@ -4,7 +4,7 @@ type: essay
 title: "The Right Way to Code?"
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-21
-published: false
+published: true
 labels:
 - IntelliJ
 - Coding Standards
