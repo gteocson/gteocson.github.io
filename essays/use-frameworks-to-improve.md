@@ -24,7 +24,7 @@ Before this course I never had the chance to use HTML and CSS. Quickly I learned
 
 Let us take a look at two examples one with bootstrap and one without. Now before you take a look I do want to say I am no web developer wizard. Someone with more experience probably could make a non-bootstrap version nicer and simpler. But the biggest point is being someone with only 1-2 weeks of web development and being able to create a much nicer and more practical using a framework shows how helpful it can be.
 
-<img width="500px" src="../img/With-Bootstrap.jpg">
+<img width="700px" src="../img/With-Bootstrap.jpg">
 
 ```
 Index.html
@@ -50,7 +50,7 @@ Index.html
 ```
 
 
-<img width="500px" src="../img/Without-Bootstrap.jpg">
+<img width="700px" src="../img/Without-Bootstrap.jpg">
 
 ```
 Index.html
