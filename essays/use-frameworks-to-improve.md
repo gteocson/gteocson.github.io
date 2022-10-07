@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Learning Javascript: The Easiest Language?"
+title: "Frameworks Are A Blessing"
 # All dates must be YYYY-MM-DD format!
 date: 2022-10-06
 published: true 
