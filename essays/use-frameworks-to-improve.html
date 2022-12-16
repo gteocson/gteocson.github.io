@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Frameworks Are A Blessing | Geoffrey Teocson | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/gteocson.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:url" content="https://gteocson.github.io/essays/use-frameworks-to-improve.html">
+    <meta property="og:title" content="Frameworks Are A Blessing | Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/gteocson.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Frameworks Are A Blessing | Geoffrey Teocson | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Geoffrey Teocson</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Frameworks Are A Blessing</h1>
+  <span class="date">06 Oct 2022</span>
+  <hr>
+  <p align="center">
+  <img width="150px" src="../img/bootstrap-logo.png" class="img-thumbnail" />
+ </p>
+
+<p>Before this course I never had the chance to use HTML and CSS. Quickly I learned that even though making a website is hard, designing it to how you want is even harder. The good and bad thing about coding is it will work exactly how you type it. In HTML and CSS you need to change the margins, padding, size, spacing, and more, but, when you apply a framework you can write a lot less code for a much better result. I can sit here and be frustrated with trying to make a bar with internal links or simply create a nav bar in bootstrap.</p>
+
+<h1 id="it-cant-be-that-bad-right">It Can’t Be That Bad Right?</h1>
+
+<p>Let us take a look at two examples one with bootstrap and one without. Now before you take a look I do want to say I am no web developer wizard. Someone with more experience probably could make a non-bootstrap version nicer and simpler. But the biggest point is being someone with only 1-2 weeks of web development and being able to create a much nicer and more practical using a framework shows how helpful it can be.</p>
+
+<p><img width="700px" src="../img/With-Bootstrap.jpg" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index.html
+    &lt;nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark"&gt;
+        &lt;div class="container-fluid d-flex justify-content-evenly"&gt;
+            &lt;a class="nav-link" href="#Intro-header"&gt;Introduction&lt;/a&gt;
+            &lt;a class="nav-link" href="#IE-header"&gt;Internet Explorer&lt;/a&gt;
+            &lt;a class="nav-link" href="#FireFox-header"&gt;FireFox&lt;/a&gt;
+            &lt;a class="nav-link" href="#Chrome-header"&gt;Chrome&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div class="container"&gt;
+
+        &lt;h1 class="pt-5"&gt;A history of browsers&lt;/h1&gt;
+        &lt;h2 id="Intro-header"&gt;Introduction&lt;/h2&gt;
+
+        &lt;p&gt;
+            The first web browser was invented in 1990 by &lt;a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"&gt;Tim Berners-Lee&lt;/a&gt;. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, Marc Andreesen created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s. These are the two major milestones in the history of the Web.
+
+            The wars put the Web in the hands of millions of ordinary PC users, but showed how commercialization of the Web could stymie standards efforts. Both Microsoft and Netscape liberally incorporated proprietary extensions to HTML in their products, and tried to gain an edge by product differentiation, leading to the acceptance of the Cascading Style Sheets proposed by Hakon Wium Lie over Netscape's JavaScript Style Sheets (JSSS) by W3C.
+        &lt;/p&gt;    
+</code></pre></div></div>
+
+<p><img width="700px" src="../img/Without-Bootstrap.jpg" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index.html
+&lt;div class="navreplacebar"&gt;
+    &lt;a class="tablecontent" href="#Intro-header"&gt;Introduction&lt;/a&gt;
+    &lt;a class="tablecontent" href="#IE-header"&gt;Internet Explorer&lt;/a&gt;
+    &lt;a class="tablecontent" href="#FireFox-header"&gt;FireFox&lt;/a&gt;
+    &lt;a class="tablecontent" href="#Chrome-header"&gt;Chrome&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h1&gt;A history of browsers&lt;/h1&gt;
+
+&lt;h2 id="Intro-header"&gt;
+    Introduction
+&lt;/h2&gt;
+&lt;p&gt;
+    The first web browser was invented in 1990 by &lt;a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"&gt;Tim Berners-Lee&lt;/a&gt;. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, Marc Andreesen created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s. These are the two major milestones in the history of the Web.
+
+    The wars put the Web in the hands of millions of ordinary PC users, but showed how commercialization of the Web could stymie standards efforts. Both Microsoft and Netscape liberally incorporated proprietary extensions to HTML in their products, and tried to gain an edge by product differentiation, leading to the acceptance of the Cascading Style Sheets proposed by Hakon Wium Lie over Netscape's JavaScript Style Sheets (JSSS) by W3C.
+&lt;/p&gt;
+
+Style.css
+.navreplacebar {
+    background-color: gray;
+    margin-left: -50px;
+    margin-right: -50px;
+    text-align: center;
+}
+
+.tablecontent {
+    text-align: center;
+    color: white;
+    padding: 50px 10px 50px 10px;
+
+}
+</code></pre></div></div>
+
+<p>Bottom line is why would someone want to work harder for an equal result. Frameworks allow you to do more faster and majority of the time nicer as well. As a software engineer if you spend most of your time trying to do things the hard way you’ll just end up having wasted time. Throughout my school years I have always been told to work smarter not harder. To me using frameworks is just working smarter, you get to do more with less time.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

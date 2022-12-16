@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="What Makes A Good Wordle Word | Geoffrey Teocson | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/gteocson.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:url" content="https://gteocson.github.io/projects/wordle-best-words.html">
+    <meta property="og:title" content="What Makes A Good Wordle Word | Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/gteocson.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>What Makes A Good Wordle Word | Geoffrey Teocson | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Geoffrey Teocson</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">What Makes A Good Wordle Word</h1>
+ <p align="center">
+  <img width="500" src="../img/wordle/wordle_header.png" />
+</p>
+
+<h1 id="more-is-better">More Is Better</h1>
+
+<p>Wordle the 5-letter word guessing game that took the world by storm. During my EE396 course we explored what creates a good word. Though the challenge isn’t about finding a good word it is about finding a good set of words. This non-static learning is exactly what the course is about.</p>
+
+<p>When you guess a word there may be a specific word that gives you the highest probability of information. However, after you guess that single word what is the best second guess. Depending on the pattern there may be multiple best choices.</p>
+
+<p>But how would you find that out? We explored the entropy of a word and the number of patterns associated with that word. To find the number of patterns with each word would use the function below. Note that our word bank isn’t the same as wordles and I think they are still updating it as well.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dictionary = {}
+
+for z in answers:
+
+    dictionary.clear()
+
+    for x in answers:
+    
+        p = getPattern(z,x)
+        
+        if p in dictionary.keys():
+            dictionary[p]+= 1
+        else:
+            dictionary[p] = 1
+            
+    print("\nThe word is",z,"\nNumber of different patterns",len(dictionary))
+</code></pre></div></div>
+
+<h1 id="a-new-project">A New Project?</h1>
+
+<p>This small program was just an insight into information theory. In this specific course knowing about information theory is a good lead in into the larger project. More information about the project will be discussed in the module about the Huligutta game.</p>
+
+<p>Just for some information we beginning to work on machine learning and neural network related topics. Being able to recognize patterns and dynamically changing ones at that really showcases the beauty of AI and how we can code programs to learn so much faster than what a human can.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Poorly Worded Doesn't Mean Dumb | Geoffrey Teocson | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/gteocson.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:url" content="https://gteocson.github.io/essays/poorly-worded-not-dumb.html">
+    <meta property="og:title" content="Poorly Worded Doesn't Mean Dumb | Geoffrey Teocson | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/gteocson.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Poorly Worded Doesn't Mean Dumb | Geoffrey Teocson | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Geoffrey Teocson</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Poorly Worded Doesn't Mean Dumb</h1>
+  <span class="date">08 Sep 2022</span>
+  <hr>
+  <p><img width="300px" class="rounded float-start pe-4" src="../img/question_img.jpg" /></p>
+
+<h2 id="you-wont-sound-dumb-probably">You won’t sound dumb (probably)</h2>
+
+<p>Now I do not want to discourage anybody from asking questions. I think asking questions are important and even if the answer may be seem obvious at least the experience will help you. However, I do believe asking questions is a skill that needs to be learned and practiced. In the software engineering field there is so much room for diversity. There are many different coding languages, environments, there could be issues with the hardware or bugs from other programs. Being able to ask good questions will allow you to find good answers and learn more. Let’s take a look at stack overflow, a website used by programmers to help ask and answer questions relating to a multitude of coding related areas.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q: How can I pivot a dataframe?
+
+The problem with existing questions and answers is that often the question is focused on a nuance that the OP has trouble generalizing in order to use a number of the existing good answers. However, none of the answers attempt to give a comprehensive explanation (because it's a daunting task)
+
+Look a few examples from my Google Search
+
+How to pivot a dataframe in Pandas?
+Good question and answer. But the answer only answers the specific question with little explanation.
+pandas pivot table to data frame
+In this question, the OP is concerned with the output of the pivot. Namely how the columns look. OP wanted it to look like R. This isn't very helpful for pandas users.
+pandas pivoting a dataframe, duplicate rows
+Another decent question but the answer focuses on one method, namely pd.DataFrame.pivot
+So whenever someone searches for pivot they get sporadic results that are likely not going to answer their specific question.
+
+Question(s)
+Why do I get ValueError: Index contains duplicate entries, cannot reshape
+
+How do I pivot df such that the col values are columns, row values are the index, and mean of val0 are the values?
+
+ col   col0   col1   col2   col3  col4
+ row
+ row0  0.77  0.605    NaN  0.860  0.65
+ row2  0.13    NaN  0.395  0.500  0.25
+ row3   NaN  0.310    NaN  0.545   NaN
+ row4   NaN  0.100  0.395  0.760  0.24
+
+</code></pre></div></div>
+
+<p>The question actually has a lot more information then shown above and I highly encourage you to look at it <a href="https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe">here</a>. The creator of the question includes code that they are testing as well as other follow up questions relating to thee topic, 11 of them to be exact. Now the only gripe I have with this is it might be too much. Yet there is a lot of good in it. The person has shown that they have down previous research and has done some experimentation.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A:
+Examples
+What I'm going to do for each subsequent answer and question is to answer it using pd.DataFrame.pivot_table. Then I'll provide alternatives to perform the same task.
+
+Question 3
+How do I pivot df such that the col values are columns, row values are the index, mean of val0 are the values, and missing values are 0?
+
+pd.DataFrame.pivot_table
+
+fill_value is not set by default. I tend to set it appropriately. In this case I set it to 0. Notice I skipped question 2 as it's the same as this answer without the fill_value
+
+aggfunc='mean' is the default and I didn't have to set it. I included it to be explicit.
+
+    df.pivot_table(
+        values='val0', index='row', columns='col',
+        fill_value=0, aggfunc='mean')
+
+    col   col0   col1   col2   col3  col4
+    row
+    row0  0.77  0.605  0.000  0.860  0.65
+    row2  0.13  0.000  0.395  0.500  0.25
+    row3  0.00  0.310  0.000  0.545  0.00
+    row4  0.00  0.100  0.395  0.760  0.24
+pd.DataFrame.groupby
+
+  df.groupby(['row', 'col'])['val0'].mean().unstack(fill_value=0)
+pd.crosstab
+
+  pd.crosstab(
+      index=df['row'], columns=df['col'],
+      values=df['val0'], aggfunc='mean').fillna(0)
+</code></pre></div></div>
+
+<p>The way they worded the question has allowed them to extract more information as we can see from the responses. In this particular answer they have received a direct answer along with alternative methods. This is because they provided people with adequate information to get the exact answer they are looking for. They can even test the code given to them as a bonus.</p>
+
+<h2 id="what-should-you-avoid">What should you avoid?</h2>
+
+<p>I suggest doing your own personal research first because you may find out another person has had the same problem as you. If you are resorting to posting on a forum try to gather all possible information needed before posting. A good bad example is like the question below.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q: Python Old object information being kept
+
+I'm making a class of rooted Trees using a class of Nodes that have a "word" of the form [1,1,2], where [1,1] is the parent of [1,1,2] and [1,1,1] is the preceding sibling of [1,1,2], a list of children, and a parent. For some reason, in the for loop section, the second time the line nextChild = Node(word) it is taking as input one child (which is the previous nextChild) even though I am not passing in anything as the child. I have no idea why this is happening. I'll post more code if requested.
+
+</code></pre></div></div>
+
+<p>Note that this is the original question without the edit. The edit adds a section of code to look at, which you can also look at <a href="https://stackoverflow.com/questions/24320779/python-old-object-information-being-kept">here</a>. The asker didn’t end up getting a proper answer only redirections to other forum posts due to no code present to test and debug. The fact that they had to incorporate the code afterwards meant it was too late and most likely was covered by other questions.</p>
+
+<p>Again this doesn’t mean to stop asking questions. You should just know how to ask them and improve on it. It is a powerful skill that everyone can use. I still have trouble asking questions but it takes time.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

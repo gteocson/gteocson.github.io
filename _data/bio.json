@@ -1,0 +1,46 @@
+{
+  "basics": {
+    "name": "Geoffrey Teocson",
+    "label": "Student",
+    "picture": "https://github.com/gteocson.png",
+    "email": "gteocson@hawaii.edu",
+    "phone": "",
+    "website": "https://gteocson.github.io",
+    "summary": "I am studying for a B.S. in Computer Engineering at the University of Hawaii.",
+    "location": { "address": "", "postalCode": "96797", "city": "Waipahu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "gteocson", "url": "https://github.com/gteocson" },
+      { "network": "linkedin", "username": "geoffreyteocson", "url": "https://www.linkedin.com/in/geoffreyteocson/" }
+    ]
+  },
+  "interests": [
+    { "name": "Machine Learning" },
+    { "name": "Computer Engineering" },
+    { "name": "Virtual and Augmented Reality" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C#", "C++", "Javascript", "Python" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Engineering (expected Spring, 2023)",
+      "studyType": "B.S.",
+      "startDate": "2019",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii Law Library",
+      "position": "Public Service Representative",
+      "startDate": "2019",
+      "endDate": "Present"
+    }
+  ]
+}
