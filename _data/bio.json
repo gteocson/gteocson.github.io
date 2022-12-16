@@ -34,5 +34,13 @@
       "courses": [
       ]
     }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii Law Library",
+      "position": "Public Service Representative",
+      "startDate": "2019",
+      "endDate": "Present"
+    }
   ]
 }
